@@ -1,8 +1,54 @@
+/*#050505 (svart), #121212 (svart), #353535 (mörk grå), #666666 (mellangrå), #7f7f7f (mellan grå ljusare), #999999 (ljusar grå), #e5e5e5 (ljus grå), #f4f4f4 (vit) och #087fe7 (blå).*/
+
 body {
     margin:0; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 20px; 
+    padding: 10px; 
+    border-bottom: 1px solid #e5e5e5; 
+    gap: 30px;
+}
+.arrow{
+    height: 10px;
+    width: 10px;
+}
+.nav-left {
+    display: flex;
+}
+#nav-right {
+    margin-left:auto; 
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px; 
+}
+nav a:hover {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+a.button-black {
+    background-color:#050505;
+    color:#f4f4f4; 
+    border-radius: 5px;
+}
+a.button-black:hover{
+    
+}
+.devider {
+    border-right: 1px solid #e5e5e5; 
+}
+#logo{
+    width: 80px;
+    height: 40px;
+}
+main {
     max-width: 1000px;
 }
-
 footer {
     max-width: 1200px;
 }
