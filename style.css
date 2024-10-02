@@ -57,7 +57,7 @@ main {
 }
 #top-pic {
     display: flex; 
-    margin-top: 100px; 
+    margin: 100px 0 150px 0; 
     box-sizing: border-box;
 }
 #top-pic h1 {
@@ -76,6 +76,23 @@ main {
 }
 #nr1 {
     flex: 1; 
+}
+.row  {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#row1 {
+    padding-bottom: 30px;
+}
+#logos img {
+    height: 20px;
+    object-fit: cover;
+}
+#logos {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 30px;
 }
 
 footer {
