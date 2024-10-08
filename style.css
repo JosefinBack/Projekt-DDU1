@@ -67,15 +67,13 @@ main {
 #top-pic p {
     color: #999999; 
     margin-bottom: 30px; 
+    font-size: 18px; 
 }
 #top-pic img {
     width: 100%;
 }
-#textnr1 {
-    flex: 1; 
-}
-#nr1 {
-    flex: 1; 
+#nr1, #textnr1 {
+    flex-basis: 50%; 
 }
 .row  {
     display: flex;
@@ -94,7 +92,45 @@ main {
     border-bottom: 1px solid #e5e5e5;
     padding: 30px;
 }
-
+h2 {
+    margin: 50px 0 0 0; 
+}
+.doginfo {
+    display: flex; 
+    flex-direction: column; 
+    color: #999999; 
+}
+.textdog {
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 15px; 
+}
+.doginfo img {
+    width: 100%;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; 
+}
+.quote {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 550;
+} /*texten blir inte exakt som på bilden. Med weight 650 så blir texten för tjock, men orden hamnar på rätt plats...*/
+.small-pic {
+    display: flex; 
+    justify-content: center;
+}
+.small-pic p{
+    margin: 10px; 
+}
+.small-pic img {
+    height: 65px;
+}
+.second {
+    font-weight: 320;
+    color:#999999; 
+}
 footer {
     max-width: 1200px;
+    height: 300px;
 }
