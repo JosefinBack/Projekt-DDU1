@@ -93,7 +93,8 @@ main {
     padding: 30px;
 }
 h2 {
-    margin: 50px 0 0 0; 
+    margin: 100px 0 0 0; 
+    font-size: 36px;
 }
 .doginfo {
     display: flex; 
@@ -119,16 +120,40 @@ h2 {
 .small-pic {
     display: flex; 
     justify-content: center;
+    gap: 20px;
 }
 .small-pic p{
-    margin: 10px; 
+    margin: 0;  
 }
 .small-pic img {
     height: 65px;
 }
+.name-and-title{
+    align-self: center;
+}
 .second {
     font-weight: 320;
     color:#999999; 
+}
+#container {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#free-plan {
+    text-align: center;
+    margin: 100px auto; 
+    width: 700px;
+}
+#free-plan h1 {
+    font-size: 45px; 
+}
+#free-plan p {
+    color:#999999; 
+    padding: 10px; 
+    font-size: 18px; 
+}
+#gray-squere {
+    background-color:#999999;
 }
 footer {
     max-width: 1200px;
