@@ -191,23 +191,34 @@ main {
 }
 .content-bottom {
     border-top: 1px solid #e5e5e5; 
+}
+.content {
     text-align: center;
 }
-.content-bottom h1 {
+.content h1 {
     margin: 100px 0 0 0;
+    font-size: 36px;
 }
-.content-bottom p {
+.content p {
     color:  #999999; 
+    margin: 10px 0 50px 0; 
 }
 #column-built {
     display: flex;
     text-align: center;
 }
+.column {
+    padding: 0 20px; 
+    border-right: 1px solid #e5e5e5; 
+}
 .column h2 {
     margin: 0; 
 }
-.column {
-    padding: 20px; 
+.column p {
+    color: #999999; 
+}
+.column a {
+    color: #050505; 
 }
 footer {
     max-width: 1200px;
