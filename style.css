@@ -148,7 +148,7 @@ h2 {
     font-size: 45px; 
     margin: 0; 
 }
-#free-plan p {
+#text-free {
     color:#999999; 
     padding: 30px; 
     font-size: 18px; 
@@ -158,20 +158,31 @@ h2 {
     background-color:#f4f4f4;
     padding: 20px; 
     margin: 80px 0; 
+    border-radius: 10px; 
 }
-#grey-squere p {
-    margin: 0; 
-    padding: 0; 
+#barkey {
+    color:#050505; 
+}
+.underline p {
+    margin: 0;  
+    padding: 10px;  
+    color:  #999999; 
 }
 .check {
     height: auto;
-    width: 20px;
+    width: 15px;
 }
 .underline {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #e5e5e5 ;
     display: flex;
     justify-content: space-between;
 }
+#last {
+    border-bottom: none; 
+}
+
+
+
 footer {
     max-width: 1200px;
     height: 300px;
