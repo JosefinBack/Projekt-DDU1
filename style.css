@@ -4,7 +4,6 @@ body {
     margin:0; 
     font-family: Inter;
     line-height: 1.3;
-    background-color: #f4f4f4;
 }
 @font-face {
     font-family: Inter;
@@ -16,7 +15,7 @@ nav {
     align-items: center;
     padding: 10px; 
     border-bottom: 1px solid #e5e5e5;
-    background-color: #f4f4f4; 
+    background-color: white; 
     gap: 30px;
     position: fixed;
     top:0px;
@@ -102,7 +101,7 @@ main {
     border-bottom: 1px solid #e5e5e5;
     padding: 30px;
 }
-h2 {
+#container h2 {
     margin: 100px 0 0 0; 
     font-size: 36px;
 }
@@ -165,7 +164,7 @@ h2 {
     margin: 0;
 }
 #gray-squere {
-    background-color:#f4f4f4;
+    background-color:#f4f4f4; 
     padding: 20px; 
     margin: 80px 0; 
     border-radius: 10px; 
@@ -183,16 +182,33 @@ h2 {
     width: 15px;
 }
 .underline {
-    border-bottom: 1px solid #e5e5e5 ;
+    border-bottom: 1px solid #e5e5e5;
     display: flex;
     justify-content: space-between;
 }
 #last {
-    border-bottom: none; 
+    border: none; 
 }
-
-
-
+.content-bottom {
+    border-top: 1px solid #e5e5e5; 
+    text-align: center;
+}
+.content-bottom h1 {
+    margin: 100px 0 0 0;
+}
+.content-bottom p {
+    color:  #999999; 
+}
+#column-built {
+    display: flex;
+    text-align: center;
+}
+.column h2 {
+    margin: 0; 
+}
+.column {
+    padding: 20px; 
+}
 footer {
     max-width: 1200px;
     height: 300px;
