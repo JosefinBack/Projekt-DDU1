@@ -26,7 +26,7 @@ nav {
     height: 10px;
     width: 10px;
 }
-.nav-left {
+#nav-left {
     display: flex;
 }
 #nav-right {
@@ -38,6 +38,10 @@ nav a {
     padding: 5px 10px; 
     font-size: 13.5px; 
 }
+#hamburger {
+    width: 15px;
+    display: none;
+}
 nav a:hover {
     background-color: #e5e5e5;
     border-radius: 5px;
@@ -46,10 +50,13 @@ a.button-black {
     background-color:#050505;
     color:#f4f4f4; 
     border-radius: 5px;
-    padding: 5px 10px; 
+    padding: 10px; 
     text-decoration: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 } 
+a.button-black:hover {
+    background-color: #353535;
+}
 .devider {
     border-right: 1px solid #e5e5e5; 
 }
@@ -188,9 +195,9 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.last {
+#last {
     border: none; 
-}
+} /*borde vara en klass men jag får det inte att fungera, förmodligen pga specificiteten*/
 .content-bottom {
     border-top: 1px solid #e5e5e5; 
 }
@@ -297,6 +304,32 @@ footer a {
     text-decoration: none;
     color: #999999;
     display: block; 
-    padding: 5px 0; 
+    padding: 5px 0;
 }
 
+@media (max-width: 600px) {
+    body {
+        margin: 0 25px; 
+    }
+    nav {
+        border: none; 
+        position: static; 
+    }
+    #nav-left, #nav-right{
+        display: none;
+    }
+    #hamburger{
+        display: inline; 
+    }
+    #top {
+        flex-direction: column-reverse;
+        margin: 50px 0 100px 0;
+        text-align: center;
+    }
+    #top h1 {
+        margin-top: 0; 
+    }
+    #top p {
+        padding: 10px; 
+    }
+}
