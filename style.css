@@ -1,7 +1,7 @@
 /*#050505 (svart), #121212 (svart), #353535 (mörk grå), #666666 (mellangrå), #7f7f7f (mellan grå ljusare), #999999 (ljusar grå), #e5e5e5 (ljus grå), #f4f4f4 (vit) och #087fe7 (blå).*/
 
 body {
-    margin:0; 
+    margin:0 10px; 
     font-family: Inter;
     line-height: 1.3;
 }
@@ -260,8 +260,7 @@ main {
 }
 footer {
     max-width: 1200px;
-    margin: 100px auto 0 auto; 
-    height: 300px;
+    margin: 100px auto 50px auto; 
     border-top: 1px solid #e5e5e5;
     font-size: 12px;
 }
@@ -280,7 +279,7 @@ footer {
 }
 #logo-footer {
     width: 130px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #media-footer {
     display: flex; 
@@ -289,6 +288,10 @@ footer {
 .media {
     height: auto;
     width: 20px;
+}
+#footer-text {
+    color: #999999;
+    margin-top: 70px;  
 }
 footer a {
     text-decoration: none;
