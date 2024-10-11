@@ -384,7 +384,25 @@ footer a {
         border: none; 
         margin-bottom: 50px; 
     }
+    footer {
+        font-size: 14px;
+    }
     .footer-wrapper {
         display: block; 
+    }
+    #logo-footer {
+        margin-top: 50px; 
+    }
+    #footer-text {
+        margin: 35px 0;
+        color: #050505; 
+    }
+    #grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .footer-content {
+        margin-top: 0; 
     }
 }
