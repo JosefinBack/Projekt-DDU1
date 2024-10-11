@@ -75,7 +75,6 @@ main {
 #top h1 {
     font-size: 53px;
     margin: 50px 0 0 0; 
-    line-height: 1;
 }
 #top p {
     color: #999999; 
@@ -307,10 +306,13 @@ footer a {
     display: block; 
     padding: 5px 0;
 }
-
+/*----------------mobilanpassnig ----------------*/
 @media (max-width: 600px) {
     body {
         margin: 0 25px; 
+    }
+    #logo-header {
+        width: 120px;
     }
     nav {
         border: none; 
@@ -321,6 +323,7 @@ footer a {
     }
     #hamburger{
         display: inline; 
+        width: 25px;
     }
     #top {
         flex-direction: column-reverse;
@@ -333,8 +336,14 @@ footer a {
     #top p {
         padding: 10px; 
     }
+    .pic-left {
+    padding: 0 30px;
+    }
     #container {
         text-align: center;
+    }
+    #container h2 {
+        margin: 70px 0 0 0; 
     }
     .doginfo {
         display: block;
@@ -387,8 +396,14 @@ footer a {
     footer {
         font-size: 14px;
     }
+    #logo-footer {
+        width: 160px;
+    }
     .footer-wrapper {
         display: block; 
+    }
+    .media {
+        width: 25px;
     }
     #logo-footer {
         margin-top: 50px; 
@@ -396,7 +411,12 @@ footer a {
     #footer-text {
         margin: 35px 0;
         color: #050505; 
+    } 
+    #footer-text p {
+        padding: 10px 0;
+        margin: 0; 
     }
+    /*footer stämmer inte längre*/
     #grid {
         display: grid; 
         grid-template-columns: 1fr 1fr;
