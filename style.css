@@ -263,11 +263,37 @@ footer {
     margin: 100px auto 0 auto; 
     height: 300px;
     border-top: 1px solid #e5e5e5;
+    font-size: 12px;
+}
+.footer-wrapper {
+    max-width: 1000px;
+    margin: 0 auto; 
+    display: flex;
+}
+.footer-content {
+    flex-grow: 1; 
+    margin-top: 50px; 
+}
+.bold {
+    font-weight: 550;
+    margin: 0;
 }
 #logo-footer {
-    width: 100px;
+    width: 130px;
+    margin-bottom: 10px;
+}
+#media-footer {
+    display: flex; 
+    gap: 8px; 
 }
 .media {
     height: auto;
     width: 20px;
 }
+footer a {
+    text-decoration: none;
+    color: #999999;
+    display: block; 
+    padding: 5px 0; 
+}
+
