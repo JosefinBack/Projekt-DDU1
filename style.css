@@ -96,13 +96,14 @@ main {
 .row  {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap:30px;
 }
 #row1 {
     padding-bottom: 30px;
 }
 #logos img {
-    height: 20px;
+    height: 25px;
     object-fit: cover;
 }
 #logos {
@@ -332,4 +333,15 @@ footer a {
     #top p {
         padding: 10px; 
     }
+    #container {
+        text-align: center;
+    }
+    .doginfo {
+        display: block;
+    }
+    .textdog {
+        width: 100%;
+        font-size: 18px; 
+    }
+   
 }
