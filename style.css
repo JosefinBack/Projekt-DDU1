@@ -9,7 +9,7 @@ body {
     font-family: Inter;
     src: url(material/Inter.ttf);
 }
-nav {
+#top-menu-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,7 @@ nav {
 }
 #nav-left {
     display: flex;
+    position: relative;
 }
 #nav-right {
     margin-left:auto; 
@@ -37,6 +38,18 @@ nav a {
     color: black;
     padding: 5px 10px; 
     font-size: 13.5px; 
+}
+.sub-meny {
+    display: flex; 
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;  
+    width: 130px;
+    position: absolute; 
+}
+#nav-left:hover nav.sub-meny {
+    display: flex;
 }
 #hamburger {
     width: 15px;
@@ -64,6 +77,7 @@ a.button-black:hover {
     width: 80px;
     height: auto;
 }
+/*-------------------main börjar---------*/
 main {
     max-width: 1000px;
     margin: 0 auto; 
@@ -89,14 +103,14 @@ main {
     width: 100%; 
     object-position: center;
 }
-.pick-left .text-right {
+.text-right, .pic-left {
     flex-basis: 50%;
 }
 .row  {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 25px;
 }
 #row1 {
     padding-bottom: 30px;
@@ -134,7 +148,8 @@ main {
     font-size: 36px;
     text-align: center;
     font-weight: 550;
-} /*texten blir inte exakt som på bilden. Med weight 650 så blir texten för tjock, men orden hamnar på rätt plats...*/
+    padding: 0 20px; 
+} 
 .small-pic {
     display: flex; 
     justify-content: center;
