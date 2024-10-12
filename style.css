@@ -28,7 +28,6 @@ body {
 }
 #nav-left {
     display: flex;
-    position: relative;
 }
 #nav-right {
     margin-left:auto; 
@@ -36,27 +35,15 @@ body {
 nav a {
     text-decoration: none;
     color: black;
-    padding: 5px 10px; 
+    padding: 10px; 
     font-size: 13.5px; 
-}
-.sub-meny {
-    display: flex; 
-    flex-direction: column;
-    padding: 5px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;  
-    width: 130px;
-    position: absolute; 
-}
-#nav-left:hover nav.sub-meny {
-    display: flex;
 }
 #hamburger {
     width: 15px;
     display: none;
 }
 nav a:hover {
-    background-color: #e5e5e5;
+    background-color: #f4f4f4;
     border-radius: 5px;
 }
 a.button-black {
@@ -77,14 +64,81 @@ a.button-black:hover {
     width: 80px;
     height: auto;
 }
+/*------------drop-down-menyer-------------*/
+.drop-down, .drop-down-first, drop-down-last {
+    position: relative;
+    align-self: center;
+}
+#sub-meny-first {
+    display: none;  
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;  
+    width: 240px;
+    position: absolute; 
+    top: 25px;
+    background-color: white;
+}
+.drop-down-first:hover nav#sub-meny-first {
+    display: flex;
+}
+.meny-pic {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #e5e5e5; 
+    border-radius: 5px;
+}
+.first-content a {
+    display: flex;
+    gap: 10px;
+}
+.first-content p {
+    margin: 0; 
+}
+.sub-meny {
+    display: none;
+    flex-direction: column;    
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;  
+    width: 130px;
+    position: absolute; 
+    top: 25px;
+    background-color: white;
+}
+.drop-down:hover nav.sub-meny {
+    display: flex;
+}
+#sub-meny-last {
+    width: 200px;
+}
+#text-drop-down-last {
+    font-size: 13.5px;
+    padding: 10px;
+    color: #999999; 
+}
+#text-drop-down-last p {
+   margin: 0; 
+}
+#link1 {
+    text-decoration: underline;
+    padding: 0; 
+}
+#link1:hover {
+    color:#087fe7; 
+    background-color: white;
+}
+
+
 /*-------------------main börjar---------*/
 main {
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 #top {
     display: flex;
-    margin: 150px 0 50px 0; 
+    margin: 100px 0 50px 0; 
 }
 #top h1 {
     font-size: 53px;

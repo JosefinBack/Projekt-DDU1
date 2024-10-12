@@ -11,8 +11,65 @@
             <nav id="top-menu-container">
                 <img id="logo-header" src="material/brand.svg" alt="Barky logo">
             <div id="nav-left">
+                <div class="drop-down-first">
                 <a href="#">Product <img class="arrow" src="material/nav-caret.svg"></a>
-                <a href="#">Teams <img class="arrow" src="material/nav-caret.svg"></a>
+                    <!--första drop down-->
+                    <nav id="sub-meny-first">
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-01.svg">
+                            <div>
+                                <p class="bold">AI</p>
+                                <p class="second">Integrated AI assistant</p>
+                            </div>
+                        </div></a>
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-02.svg">
+                            <div>
+                                <p class="bold">Docs</p>
+                                <p class="second">Simple & powerful</p>
+                            </div>
+                        </div></a> 
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-03.svg">
+                            <div>
+                                <p class="bold">Wikis</p>
+                                <p class="second">Centralize your knowledge</p>
+                            </div>
+                        </div></a> 
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-04.svg">
+                            <div>
+                                <p class="bold">Projects</p>
+                                <p class="second">For every team or size</p>
+                            </div>
+                        </div></a> 
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-05.svg">
+                            <div>
+                                <p class="bold">Calender</p>
+                                <p class="second">Time and work, together</p>
+                            </div>
+                        </div></a> 
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-06.svg">
+                            <div>
+                                <p class="bold">Sites</p>
+                                <p class="second">Publish anything, fast</p>
+                            </div>
+                        </div></a> 
+                        <div class="first-content">
+                        <a href="#"><img class="meny-pic" src="material/nav-icon-07.svg">
+                            <div>
+                                <p class="bold">Templates</p>
+                                <p class="second">Setups to get you started</p>
+                            </div>
+                        </div>
+                        </a>
+                    </nav>
+                </div><!--första drop down slut-->
+                <!--andra drop down-->
+                <div class="drop-down">
+                    <a href="#">Teams <img class="arrow" src="material/nav-caret.svg"></a>
                     <nav class="sub-meny">
                         <a href="#">Product</a>
                         <a href="#">Engineering</a>
@@ -22,10 +79,33 @@
                         <a href="#">Startups</a>
                         <a href="#">Enterprise</a>
                     </nav>
+                </div><!--andra drop down slut-->
+                <!--tredje drop down-->
+                <div class="drop-down">
                 <a href="#">Individuals <img class="arrow" src="material/nav-caret.svg"></a>
+                    <nav class="sub-meny">
+                        <a href="#">Personal</a>
+                        <a href="#">Students</a>
+                        <a href="#">Teachers</a>
+                        <a href="#">Creators</a>
+                    </nav>
+                </div><!--tredje drop down slut-->
+                <!--fjärde drop down-->
+                <div class="drop-down">
                 <a href="#">Download <img class="arrow" src="material/nav-caret.svg"></a>
+                    <nav class="sub-meny" id="sub-meny-last">
+                        <a href="#">Barky</a>
+                        <a href="#">Calender</a>
+                        <a href="#">Web Clipper</a>
+                        <div id="text-drop-down-last">
+                            <p>Barky is always at home right in <a id="link1" href="#">your browser</a></p>
+                        </div>
+                        </nav>
+                    </div>
+                <!--fjärde drop down slut-->
                 <a href="#">Pricing</a>
-            </div>
+            </div> <!--nav-left slut-->
+
             <div id="nav-right">
                 <a class="devider" href="#">Request a demo</a>
                 <a href="#">Log in</a>
