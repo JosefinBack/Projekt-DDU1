@@ -179,6 +179,7 @@ main {
 #container h2 {
     margin: 100px 0 0 0; 
     font-size: 36px;
+    width: 45%;
 }
 .doginfo {
     display: flex; 
@@ -297,6 +298,7 @@ main {
 }
 #rated {
     display: flex;
+    gap: 20px; 
 }
 #rated-text {
     margin-top: 50px; 
@@ -312,7 +314,7 @@ main {
 }
 #procent {
     display: flex;
-    color: #999999;
+    color: #7f7f7f;
     text-align: center; 
     margin: 20px 0;  
 }
@@ -403,9 +405,6 @@ footer a {
     .pic-left img {
         width: 50%;
     }
-    .pic-left {
-        padding: 0; 
-    }
     #top h1 {
         margin: 0;
         font-size: 45px;
@@ -414,10 +413,74 @@ footer a {
         padding: 0 200px; 
     }
     .textdog p {
-        padding-right: 50px;
+        padding-right: 75px;
         margin-top: 5px; 
     }
-
+    #free-plan h1 {
+        font-size: 36px;
+    }
+    #text-free {
+        padding: 10px 30px 20px 30px; 
+    }
+    #column-built {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px; 
+    }
+    .column {
+        border: none; 
+    }
+    #badges img {
+        width: 100%;
+    }
+    #rated p {
+        font-size: 15px;
+        padding: 10px 50px 10px 0; 
+    }
+    #procent {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px; 
+    }
+    .numbers {
+        border: none; 
+    }
+    /*--------main slut, footer börjar--------*/ 
+    .footer-wrapper {
+        margin-top: 70px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 180px 1fr; 
+    }
+    #one {
+        grid-column: 1;
+        grid-row: 2; 
+    }
+    #two {
+        grid-column: 2;
+        grid-row: 2; 
+    }
+    #three {
+        grid-column: 1;
+        grid-row: 3; 
+    }
+    #four {
+        grid-column: 2;
+        grid-row: 3; 
+    }
+    #footer-text {
+        margin: 35px 0;
+        color: #050505; 
+    } 
+    #footer-text p {
+        padding: 10px 0;
+        margin: 0; 
+    }
+    .footer-content {
+        margin-top: 0; 
+    }
 }
 
 /*----------------mobilanpassnig ----------------*/
@@ -461,7 +524,8 @@ footer a {
         text-align: center;
     }
     #container h2 {
-        margin: 70px 0 0 0; 
+        margin: 70px 0 0 0;
+        width: 100%; 
     }
     .doginfo {
         display: block;
