@@ -16,7 +16,7 @@ body {
     padding: 10px; 
     border-bottom: 1px solid #e5e5e5;
     background-color: white; 
-    gap: 30px;
+    gap: 10px;
     position: fixed;
     top:0px;
     left: 20px;
@@ -50,7 +50,7 @@ a.button-black {
     background-color:#050505;
     color:#f4f4f4; 
     border-radius: 5px;
-    padding: 10px; 
+    padding: 5px 10px; 
     text-decoration: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 } 
@@ -129,8 +129,6 @@ a.button-black:hover {
     color:#087fe7; 
     background-color: white;
 }
-
-
 /*-------------------main börjar---------*/
 main {
     max-width: 1000px;
@@ -189,7 +187,6 @@ main {
 }
 .textdog {
     width: 50%;
-    box-sizing: border-box;
     font-size: 15px; 
 }
 .doginfo img {
@@ -334,6 +331,7 @@ main {
 #try-today {
     margin: 10px 0 30px 0;  
 }
+/*------ main slut, footer börjar------*/
 footer {
     max-width: 1200px;
     margin: 100px auto 50px auto; 
@@ -375,6 +373,53 @@ footer a {
     display: block; 
     padding: 5px 0;
 }
+/*-------- ipad-anpassning------*/
+@media (max-width: 1080px) {
+    body {
+        margin: 0 25px; 
+    }
+    #top-menu-container {
+        position: static; 
+    }
+    #nav-left, #nav-right{
+        display: none;
+    }
+    #ipad {
+        display: inline; 
+        margin-left: auto; 
+    }
+    #hamburger{
+        display: inline; 
+        width: 20px;
+        padding: 5px; 
+        margin-top:  5px;
+    }
+    /*------nav slutar, main börjar------*/
+    #top {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 100px 0; 
+    }
+    .pic-left img {
+        width: 50%;
+    }
+    .pic-left {
+        padding: 0; 
+    }
+    #top h1 {
+        margin: 0;
+        font-size: 45px;
+    }
+    #top p {
+        padding: 0 200px; 
+    }
+    .textdog p {
+        padding-right: 50px;
+        margin-top: 5px; 
+    }
+
+}
+
 /*----------------mobilanpassnig ----------------*/
 @media (max-width: 600px) {
     body {
@@ -383,17 +428,21 @@ footer a {
     #logo-header {
         width: 120px;
     }
-    nav {
+    #top-menu-container {
         border: none; 
         position: static; 
     }
     #nav-left, #nav-right{
         display: none;
     }
+    #ipad{
+        display: none; 
+       }
     #hamburger{
         display: inline; 
         width: 25px;
     }
+    /*-----nav slut, main börjar-----*/
     #top {
         flex-direction: column-reverse;
         margin: 50px 0 100px 0;
@@ -462,6 +511,7 @@ footer a {
         border: none; 
         margin-bottom: 50px; 
     }
+    /*---------main slut, footer börjar -------*/
     footer {
         font-size: 14px;
     }
