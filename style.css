@@ -98,7 +98,7 @@ a.button-black:hover {
     height: auto;
 }
 /*------------drop-down-menyer-------------*/
-.drop-down, .drop-down-first, drop-down-last {
+.drop-down-first, .drop-down, drop-down-last {
     position: relative;
     align-self: center;
 }
@@ -197,6 +197,7 @@ main {
 }
 
 .pic-left img {
+    height: auto;
     width: 100%; 
 }
 
@@ -392,7 +393,6 @@ main {
 #rated p {
     padding-top: 10px; 
     font-size: var(--font-size-18);
-    box-sizing: border-box;
 }
 
 #badges {
@@ -505,6 +505,7 @@ footer a {
     }
 
     .pic-left img {
+        height: auto;
         width: 50%;
     }
 
@@ -541,6 +542,7 @@ footer a {
     }
 
     #badges img {
+        height: auto;
         width: 100%;
     }
 
@@ -645,7 +647,7 @@ footer a {
     }
 
     .pic-left {
-    padding: 0 30px;
+        padding: 0 30px;
     }
 
     #container {
